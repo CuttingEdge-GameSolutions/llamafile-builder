@@ -94,7 +94,7 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: llamafile
-                  path: llamafile/${{ steps.model_name.outputs.model }}.llamafile
+                  path: llamafile/neural-chat-7b-v3-3.Q4_0.llamafile
 
             
 
