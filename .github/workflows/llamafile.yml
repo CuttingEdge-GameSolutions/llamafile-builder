@@ -94,7 +94,7 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: llamafile
-                  path: llamafile/deepseek-coder-6.7b-instruct.Q4_0.llamafile
+                  path: llamafile/wizardlm-7b-v1.0-uncensored.Q4_0.llamafile
 
             
 
