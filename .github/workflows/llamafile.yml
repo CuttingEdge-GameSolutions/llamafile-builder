@@ -80,12 +80,6 @@ jobs:
                 cp /usr/local/bin/llamafile "$file_ext_removed_model_name".llamafile
                 zipalign -j0 "$file_ext_removed_model_name".llamafile ${{ steps.model_name.outputs.model }} .args
 
-            - name: Setup python
-              uses: actions/setup-python@v5
-              with:
-                python-version: "3.11"
-                cache: "pip"
-
             - name: Download File
               run: |
                 cd llamafile
