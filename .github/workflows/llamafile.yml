@@ -88,3 +88,4 @@ jobs:
               with:
                 name: llamafile
                 path: llamafile/${{ steps.model_name.outputs.model }}.llamafile
+
