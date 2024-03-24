@@ -80,17 +80,13 @@ jobs:
                 cp /usr/local/bin/llamafile "$file_ext_removed_model_name".llamafile
                 zipalign -j0 "$file_ext_removed_model_name".llamafile ${{ steps.model_name.outputs.model }} .args
 
-            - name: Download File
+            - name: Commit and push
               run: |
-                cd llamafile
-                file_ext_removed_model_name=$(echo ${{ steps.model_name.outputs.model }} | sed 's/\.[^.]*$//')
-                wget -O "$file_ext_removed_model_name".llamafile "$LLAMAFILE_FILE_URL"
-
-            - name: Upload artifact
-              uses: actions/upload-artifact@v2
-              with:
-                name: llamafile
-                path: llamafile/*.llamafile
+                git config --global user.email "mr.rayskinner@gmail.com"
+                git config --global user.name "CuttingEdge-GameSolutions"
+                git add .
+                git commit -m "Add generated llamafile"
+                git push
 
            
 
