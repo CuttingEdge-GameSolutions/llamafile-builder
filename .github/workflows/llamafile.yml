@@ -80,6 +80,9 @@ jobs:
                 cp /usr/local/bin/llamafile "$file_ext_removed_model_name".llamafile
                 zipalign -j0 "$file_ext_removed_model_name".llamafile ${{ steps.model_name.outputs.model }} .args
 
+            - name: List files in llamafile directory
+              run: ls -l llamafile
+
             - name: Upload llamafile
               uses: actions/upload-artifact@v2
               with:
