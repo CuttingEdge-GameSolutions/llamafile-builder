@@ -94,7 +94,7 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: llamafile
-                  path: llamafile/codeninja-1.0-openchat-7b.Q4_0.llamafile
+                  path: llamafile/llama-2-7b.Q4_0.llamafile
 
             
 
