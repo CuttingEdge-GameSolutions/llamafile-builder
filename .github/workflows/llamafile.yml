@@ -94,7 +94,7 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: llamafile
-                  path: llamafile/wizardlm-7b-v1.0-uncensored.Q4_0.llamafile
+                  path: llamafile/WestLake-7B-v2-GGUF/blob/main/westlake-7b-v2.Q4_0.llamafile
 
             
 
