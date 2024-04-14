@@ -94,7 +94,7 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: llamafile
-                  path: llamafile/Hermes-2-Pro-Mistral-7B.Q4_0.llamafile
+                  path: llamafile/dolphin-2.6-mistral-7b-dpo-laser.Q4_0.llamafile
 
             
 
