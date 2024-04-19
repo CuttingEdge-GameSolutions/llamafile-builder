@@ -94,7 +94,7 @@ jobs:
               uses: actions/upload-artifact@v2
               with:
                   name: llamafile
-                  path: llamafile/Mixtral-8x7B-v0.1.i1-IQ1_S.llamafile
+                  path: llamafile/WizardLM-2-7B-IQ4_XS.llamafile
 
             
 
