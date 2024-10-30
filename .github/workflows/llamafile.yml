@@ -100,7 +100,7 @@ jobs:
                 python3 hf.py ${{ github.event.inputs.model_url }}  ${{ github.event.inputs.huggingface_repo }} "$file_ext_removed_model_name".llamafile
             
             - name: Upload llamafile
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v4
               with:
                   name: llamafile
                   path: llamafile/Meta-Llama-3-8B-Instruct.Q4_0.llamafile
